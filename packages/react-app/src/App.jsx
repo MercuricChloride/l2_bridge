@@ -29,27 +29,9 @@ import { Transactor } from "./helpers";
 import { ExampleUI, Hints, Subgraph } from "./views";
 
 const { ethers } = require("ethers");
-/*
-    Welcome to 🏗 scaffold-eth !
-
-    Code:
-    https://github.com/scaffold-eth/scaffold-eth
-
-    Support:
-    https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA
-    or DM @austingriffith on twitter or telegram
-
-    You should get your own Infura.io ID and put it in `constants.js`
-    (this is your connection to the main Ethereum network for ENS etc.)
-
-
-    🌏 EXTERNAL CONTRACTS:
-    You can also bring in contract artifacts in `constants.js`
-    (and then use the `useExternalContractLoader()` hook!)
-*/
 
 /// 📡 What chain are your contracts deployed to?
-// const targetNetwork = NETWORKS.goerli; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+//const targetNetwork = NETWORKS.goerli; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 const targetNetwork = NETWORKS.mumbai; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
@@ -507,7 +489,7 @@ function App(props) {
             */}
 
             <Contract
-              name="YourContractRoot"
+              name="BootcampBridge"
               price={price}
               signer={userSigner}
               provider={localProvider}
@@ -516,7 +498,7 @@ function App(props) {
               contractConfig={contractConfig}
             />
             <Contract
-              name="YourContractChild"
+              name="BootcampPlayer"
               price={price}
               signer={userSigner}
               provider={localProvider}
