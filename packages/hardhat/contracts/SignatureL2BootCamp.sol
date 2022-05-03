@@ -11,6 +11,7 @@ contract BootcampPlayer is ERC721 {
   //IPlayerOracle playerOracle;
   // @notice playerRenderer is the contract that handles the rendering of the tokens
   //IPlayerRenderer playerRenderer;
+
   constructor()ERC721("Player", "PLR"){}
 
   // could probably pack this entire struct to fill a single slot, but again it's probably not a real consideration given l2 and all
