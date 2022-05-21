@@ -9,11 +9,13 @@ packages/hardhat/*.txt
 
 packages/hardhat/artifacts*
 packages/hardhat/deployments
+packages/hardhat/contracts/SignatureL2BootCamp.c
 packages/react-app/src/contracts/*
 !packages/react-app/src/contracts/external_contracts.js
 packages/hardhat/cache*
 packages/**/data
 !packages/react-app/src/contracts/contracts.js
+test.sol
 
 
 # ts

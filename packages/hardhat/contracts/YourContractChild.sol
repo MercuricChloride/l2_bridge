@@ -30,6 +30,7 @@ contract BootcampPlayer is FxBaseChildTunnel, ERC721{
 		internal
 	{
 		for(uint i=0; i<tokenIds.length; i++){
+			require(tokenIds[i] < 10000, "Invalid token id");
 			_safeMint(recipient, tokenIds[i]);
 		}
 	}
